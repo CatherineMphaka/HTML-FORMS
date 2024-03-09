@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale= 1.0"/>
+        <title>Register Form</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+               
+            <label for="dob">Date of Birth:</label>
+            <input type="date"  id="dob" name="dob"/><br>
+<!--This will render a date picker in a browser that supports HTML5. Note that some 
+browsers may not support the type="date" input field. In those cases it will default
+to a simple text input field. -->
+           <fieldset>
+<!--Creating radio buttons for gender-->
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male"/>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female"/>
+            <label for="female">Female</label><br>
+<!--part of the form where there's address-->
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+<!--The text area element allows users to input multiple lines of text, which may be useful
+for addresses with multiple lines.-->
+<!--Telephone-->
+             <label for="phone">Phone:</label>
+             <input type="tel" id="phone" name="phone" placeholder="Enter your telephone number"/><br>
+<!--email address-->
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" placeholder="Enter your email address"/><br>
+<!--entering which course you do-->
+             <label for="course">Course:</label>
+             <input type="text" id="course" name="course" placeholder="Enter your course"/><br>                                      
+           </fieldset>
+<!--creating buttons-->
+        <button type="Register">Register</button>
+        <button type="cancel">cancel</button>
+        </form>
+    </body>
+</html>
